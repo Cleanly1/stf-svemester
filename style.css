@@ -136,6 +136,18 @@ button {
 	transition: 0;
 }
 
+.text {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.text h1 {
+	border-bottom: 1px solid white;
+}
+
 @media (max-width: 425px) {
 	.imageContainer {
 		display: flex;
