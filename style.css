@@ -1,15 +1,15 @@
 :root {
-	--yellow: #F9E11E;
-	--orange: #F0AB00;
-	--blue: #0046AD;
-	--white: #FFFFFF;
-	--darkGrey: #9BA8A6;
-  }
+	--yellow: #f9e11e;
+	--orange: #f0ab00;
+	--blue: #0046ad;
+	--white: #ffffff;
+	--darkGrey: #9ba8a6;
+}
 
 * {
 	margin: 0;
 	padding: 0;
-
+	font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -19,7 +19,6 @@ body {
 	justify-content: center;
 	flex-flow: column nowrap;
 	width: 100vw;
-	
 }
 
 .bodyBox {
@@ -29,8 +28,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-flow: column nowrap;
-	overflow:hidden;
-	background-image: url('https://get.wallhere.com/photo/1920x1080-px-landscape-690537.jpg');
+	overflow: hidden;
+	background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fb%2Fb%2F6%2F1173820-gorgerous-1920-x-1080-landscape-wallpaper-1920x1080-free-download.jpg&f=1&nofb=1");
 	background-color: white;
 	background-position: top;
 	z-index: -10;
@@ -46,7 +45,7 @@ button {
 	color: black;
 }
 
-.slideImageContainer{
+.slideImageContainer {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -100,7 +99,6 @@ button {
 	height: auto;
 }
 
-
 /*img {
 	position: relative;
 	opacity: 1;
@@ -123,24 +121,22 @@ button {
 }
 
 .header {
-	display: none;
-	position: absolute;
-	top: 0px;
-	height: 20vh;
-	z-index: -9;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	height: 6vh;
+	width: 100vw;
+	padding: 10px;
+	background-color: white;
 }
 
 .logo {
-	position: absolute;
-	height: 40px;
+	height: 5vh;
 	transition: 0;
-	top:0;
-	right: 10px;
-	background-color: none;
 }
 
-@media (max-width:425px) {
-
+@media (max-width: 425px) {
 	.imageContainer {
 		display: flex;
 		flex-flow: column wrap;
@@ -152,14 +148,13 @@ button {
 		height: 50vh;
 		background-color: white;
 	}
-	
+
 	.images {
 		width: 35vw;
 		height: auto;
 	}
 
-
-	.slideImageContainer{
+	.slideImageContainer {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
