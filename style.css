@@ -1,0 +1,173 @@
+:root {
+	--yellow: #F9E11E;
+	--orange: #F0AB00;
+	--blue: #0046AD;
+	--white: #FFFFFF;
+	--darkGrey: #9BA8A6;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column nowrap;
+	width: 100vw;
+	
+}
+
+.bodyBox {
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column nowrap;
+	overflow:hidden;
+	background-image: url('https://get.wallhere.com/photo/1920x1080-px-landscape-690537.jpg');
+	background-color: white;
+	background-position: top;
+	z-index: -10;
+}
+
+button {
+	background-color: white;
+	max-width: 100px;
+	padding: 10px 15px;
+	border-radius: 0;
+	border-style: none;
+	border: 1px solid black;
+	color: black;
+}
+
+.slideImageContainer{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-flow: row nowrap;
+	height: 70vh;
+	width: 70vh;
+	margin: 10px 5px;
+	border: 10px solid white;
+	overflow: hidden;
+}
+
+.poloroid {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	box-shadow: black 0px 0px 10px;
+}
+
+.photoDesc {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.checkBox {
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+	padding: 0;
+	text-align: center;
+	line-height: 20px;
+	font-size: 20px;
+	margin: 0 20px;
+}
+
+.imageContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	padding: 40px;
+	margin: 40px 0;
+	width: 90vw;
+	background-color: white;
+}
+
+.images {
+	width: 20vw;
+	height: auto;
+}
+
+
+/*img {
+	position: relative;
+	opacity: 1;
+	transition: 1.5s;
+	height: 100%;
+}*/
+
+.swipe {
+	position: relative;
+	transform: translateX(-100%);
+}
+
+.swipe2 {
+	position: relative;
+	transform: translateX(-200%);
+}
+
+.show {
+	opacity: 1;
+}
+
+.header {
+	display: none;
+	position: absolute;
+	top: 0px;
+	height: 20vh;
+	z-index: -9;
+}
+
+.logo {
+	position: absolute;
+	height: 40px;
+	transition: 0;
+	top:0;
+	right: 10px;
+	background-color: none;
+}
+
+@media (max-width:425px) {
+
+	.imageContainer {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 20px;
+		margin: 60px 0;
+		width: 100vw - 18px;
+		height: 50vh;
+		background-color: white;
+	}
+	
+	.images {
+		width: 35vw;
+		height: auto;
+	}
+
+
+	.slideImageContainer{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-flow: row nowrap;
+		height: 90vw;
+		width: 90vw;
+		margin: 0;
+		background-color: grey;
+		overflow: hidden;
+	}
+}
