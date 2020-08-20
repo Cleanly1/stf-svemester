@@ -10,6 +10,7 @@
 	--blue: #0046ad;
 	--white: #ffffff;
 	--darkGrey: #9ba8a6;
+	--fontBread: "Source Sans Pro", sans-serif;
 }
 
 * {
@@ -27,7 +28,7 @@ body {
 
 .bodyBox {
 	width: 100vw;
-	height: 100%;
+	height: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -90,13 +91,27 @@ button {
 	margin: 0 20px;
 }
 
+.headerImages {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	margin: 30px 0;
+	padding: 0;
+}
+
+.headerImages h1 {
+	margin: 10px;
+	font-family: var(--fontBread);
+}
+
 .imageContainer {
 	display: flex;
 	flex-flow: row nowrap;
+	width: 90vw;
 	justify-content: space-evenly;
 	padding: 40px;
-	margin: 40px 0;
-	width: 90vw;
 	background-color: white;
 }
 
@@ -176,7 +191,7 @@ li {
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: center;
-	font-size: 32px;
+	font-size: 3.5vh;
 	margin: 20px;
 	color: black;
 	text-align: left;
@@ -193,24 +208,85 @@ li {
 	border: 3px solid black;
 }
 
+.buttonContainer {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 20px;
+	margin: 30px;
+	width: 40vw;
+	box-shadow: black 1px 1px 10px;
+}
+
+.button {
+	border: 3px solid black;
+	padding: 8px;
+	text-decoration: none;
+	color: black;
+	font-family: var(--fontBread);
+	margin: 10px;
+}
+
+.button:hover {
+	color: white;
+	background-color: var(--orange);
+}
+
+.footer {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.infoText {
+	padding: 20px;
+	margin: 30px;
+	width: 40vw;
+	font-family: var(--fontBread);
+	box-shadow: black 1px 1px 10px;
+}
+
+.infoText h1 {
+	font-size: 5vh;
+}
+
+.infoText p {
+	font-size: 3vh;
+}
+
 @media (max-width: 1024px) {
-	.imageContainer {
+	.headerImages {
 		display: flex;
-		flex-flow: column wrap;
+		flex-flow: column nowrap;
 		justify-content: center;
 		align-items: center;
-		padding: 20px;
-		margin: 40px 0;
-		width: 80vw;
-		height: 66vh;
 		background-color: white;
+		margin: 20px 0;
+		padding: 0;
 		box-shadow: black 1px 1px 10px;
 	}
 
+	.headerImages h1 {
+		margin: 10px;
+		font-family: "Source Sans Pro", sans-serif;
+	}
+
+	.imageContainer {
+		display: flex;
+		flex-flow: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 2vh;
+		margin: 40px 0;
+		height: 70vh;
+		background-color: white;
+	}
+
 	.images {
-		width: 30vw;
+		max-width: 40vw;
 		height: auto;
-		margin: 20px;
+		margin: 1vh;
 	}
 
 	.list {
@@ -218,11 +294,11 @@ li {
 	}
 
 	.text h1 {
-		font-size: 30px;
+		font-size: 3vh;
 		border-bottom: 1px solid black;
 	}
 	.text p {
-		font-size: 24px;
+		font-size: 2.5vh;
 	}
 
 	ul {
@@ -238,7 +314,7 @@ li {
 		flex-flow: row nowrap;
 		justify-content: flex-start;
 		align-items: center;
-		font-size: 36px;
+		font-size: 3vh;
 		margin: 20px;
 		color: black;
 		text-align: left;
@@ -247,14 +323,28 @@ li {
 }
 
 @media (max-width: 430px) {
+	.headerImages {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		margin: 30px 0;
+		padding: 0;
+	}
+
+	.headerImages h1 {
+		margin: 10px;
+		font-family: "Source Sans Pro", sans-serif;
+	}
+
 	.imageContainer {
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: space-evenly;
-		align-items: center;
 		padding: 20px;
-		margin: 30px 0;
-		width: calc(100vw - 18px);
+		margin: 0;
+		width: calc(100vw - 100px);
 		height: 50vh;
 		background-color: white;
 	}
@@ -287,7 +377,7 @@ li {
 	}
 
 	.text h1 {
-		font-size: 28px;
+		font-size: 3vh;
 		border-bottom: 1px solid black;
 	}
 
