@@ -42,7 +42,8 @@
 }
 
 .headerText .buttons {
-	width: 10vw;
+	width: 15vw;
+	text-align: center;
 	margin: 10px 0;
 }
 
@@ -188,11 +189,16 @@ li {
 	padding: 20px;
 	margin: 20px;
 	width: calc(50vw - 140px);
-	height: 20vh;
 	background-color: white;
 	color: var(--darkBlue);
 	font-family: var(--fontBread);
 	box-shadow: black 1px 1px 10px;
+}
+
+.infoText .buttons {
+	margin: 15px auto;
+	margin-bottom: 0;
+	width: fit-content;
 }
 
 .infoText h1 {
@@ -462,6 +468,7 @@ li {
 		padding: 20px;
 		margin: 20px 30px;
 		width: calc(100vw - 100px);
+		height: 25vh;
 		box-shadow: black 1px 1px 10px;
 	}
 
@@ -472,7 +479,7 @@ li {
 		font-family: var(--fontBread);
 		margin: 0;
 		padding: 8px;
-		font-size: 1.5vh;
+		font-size: 1.8vh;
 		border: 3px solid var(--darkBlue);
 	}
 
@@ -486,6 +493,7 @@ li {
 		padding: 20px;
 		margin: 20px 30px;
 		width: calc(100vw - 100px);
+		height: 28vh;
 		font-family: var(--fontBread);
 		color: var(--darkBlue);
 		box-shadow: black 1px 1px 10px;
