@@ -33,20 +33,17 @@
 	z-index: -10;
 }
 
-button {
-	background-color: white;
-	max-width: 100px;
-	padding: 10px 15px;
-	border-radius: 0;
-	border-style: none;
-	border: 1px solid black;
-	color: black;
-}
-
 .headerText {
+	display: flex;
+	flex-flow: column nowrap;
 	font-family: var(--fontBread);
 	color: var(--darkBlue);
 	width: 40vw;
+}
+
+.headerText .buttons {
+	width: 10vw;
+	margin: 10px 0;
 }
 
 .headerText h1 {
@@ -57,6 +54,7 @@ button {
 .headerText p {
 	font-size: 1.5vh;
 	width: 30vw;
+	text-align: left;
 }
 
 .headerInfo {
@@ -99,7 +97,7 @@ button {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	color: black;
+	color: var(--darkBlue);
 	font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -129,7 +127,7 @@ li {
 	align-items: center;
 	font-size: 3.5vh;
 	margin: 20px;
-	color: black;
+	color: var(--darkBlue);
 	text-align: left;
 	height: calc(15% - 20px);
 	width: 33vw;
@@ -142,7 +140,7 @@ li {
 	text-align: center;
 	font-size: 42px;
 	line-height: 24px;
-	border: 3px solid black;
+	border: 3px solid var(--darkBlue);
 }
 
 .buttonContainer {
@@ -157,20 +155,24 @@ li {
 	box-shadow: black 1px 1px 10px;
 }
 
-.buttons {
-	border: 3px solid black;
-	padding: 8px;
-	text-decoration: none;
-	color: black;
-	font-family: var(--fontBread);
+.buttonContainer .buttons {
 	margin: 10px;
-	z-index: 1;
 }
 
-.buttons .buttons:hover {
+.buttons {
+	text-decoration: none;
+	background-color: white;
+	color: var(--darkBlue);
+	font-family: var(--fontBread);
+	margin: 0;
+	padding: 8px;
+	border: 3px solid var(--darkBlue);
+}
+
+.buttons:hover {
 	cursor: pointer;
 	color: white;
-	background-color: black;
+	background-color: var(--darkBlue);
 }
 
 .footer {
@@ -263,6 +265,17 @@ li {
 }
 
 @media (max-width: 430px) {
+	.header {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: flex-start;
+		height: 6vh;
+		width: calc(100vw - 20px);
+		padding: 10px;
+		background-color: white;
+	}
+
 	.headerInfo {
 		display: flex;
 		flex-flow: column nowrap;
@@ -272,6 +285,21 @@ li {
 		margin: 30px 0;
 		width: 80vw;
 		padding: 15px 20px;
+	}
+
+	.headerText {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		font-family: var(--fontBread);
+		color: var(--darkBlue);
+		width: 40vw;
+	}
+
+	.headerText .buttons {
+		width: 25vw;
+		margin: 10px 0;
 	}
 
 	.images {
@@ -315,30 +343,25 @@ li {
 		margin: 0;
 	}
 
-	.slideImageContainer {
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		flex-flow: row nowrap;
-		height: 90vw;
-		width: 90vw;
-		margin: 0;
-		background-color: grey;
-		overflow: hidden;
-	}
-
 	.text {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
 		align-items: center;
-		color: black;
+		color: var(--darkBlue);
 		font-family: "Source Sans Pro", sans-serif;
 	}
 
 	.text h1 {
 		font-size: 3vh;
 		border-bottom: 1px solid black;
+	}
+
+	.list {
+		width: calc(100vw - 100px);
+		background-color: white;
+		padding: 40px;
+		font-family: "Ink-font", Fallback, "Shadows Into Light Two";
 	}
 
 	ul {
@@ -356,7 +379,7 @@ li {
 		align-items: center;
 		font-size: 20px;
 		margin: 20px;
-		color: black;
+		color: var(--darkBlue);
 		text-align: left;
 		width: 66vw;
 	}
@@ -375,31 +398,34 @@ li {
 		align-items: center;
 		background-color: white;
 		padding: 20px;
-		margin: 20px;
-		width: 80vw;
+		margin: 20px 30px;
+		width: calc(100vw - 100px);
 		box-shadow: black 1px 1px 10px;
 	}
 
 	.buttons {
-		border: 3px solid black;
-		padding: 8px;
 		text-decoration: none;
-		color: black;
-		font-size: 1.5vh;
+		background-color: white;
+		color: var(--darkBlue);
 		font-family: var(--fontBread);
-		margin: 10px;
+		margin: 0;
+		padding: 8px;
+		font-size: 1.5vh;
+		border: 3px solid var(--darkBlue);
 	}
 
 	.buttons:hover {
+		cursor: pointer;
 		color: white;
-		background-color: var(--orange);
+		background-color: var(--darkBlue);
 	}
 
 	.infoText {
 		padding: 20px;
-		margin: 30px;
-		width: 80vw;
+		margin: 20px 30px;
+		width: calc(100vw - 100px);
 		font-family: var(--fontBread);
+		color: var(--darkBlue);
 		box-shadow: black 1px 1px 10px;
 		background-color: white;
 	}
