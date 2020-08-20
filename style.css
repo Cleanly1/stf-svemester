@@ -193,71 +193,6 @@ li {
 	border: 3px solid black;
 }
 
-@media (max-width: 430px) {
-	.imageContainer {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: space-evenly;
-		align-items: center;
-		padding: 20px;
-		margin: 30px 0;
-		width: 100vw - 18px;
-		height: 50vh;
-		background-color: white;
-	}
-
-	.images {
-		width: 35vw;
-		height: auto;
-	}
-
-	.slideImageContainer {
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		flex-flow: row nowrap;
-		height: 90vw;
-		width: 90vw;
-		margin: 0;
-		background-color: grey;
-		overflow: hidden;
-	}
-
-	.text {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: center;
-		align-items: center;
-		color: black;
-		font-family: "Source Sans Pro", sans-serif;
-	}
-
-	.text h1 {
-		font-size: 28px;
-		border-bottom: 1px solid black;
-	}
-
-	ul {
-		list-style: none;
-		height: auto;
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-evenly;
-		align-items: center;
-	}
-	li {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: flex-start;
-		align-items: center;
-		font-size: 20px;
-		margin: 20px;
-		color: black;
-		text-align: left;
-		width: 66vw;
-	}
-}
-
 @media (max-width: 1024px) {
 	.imageContainer {
 		display: flex;
@@ -307,6 +242,72 @@ li {
 		margin: 20px;
 		color: black;
 		text-align: left;
-		width: 50vw;
+		width: 66vw;
+	}
+}
+
+@media (max-width: 430px) {
+	.imageContainer {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 20px;
+		margin: 30px 0;
+		width: calc(100vw - 18px);
+		height: 50vh;
+		background-color: white;
+	}
+
+	.images {
+		width: 35vw;
+		height: auto;
+		margin: 0;
+	}
+
+	.slideImageContainer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-flow: row nowrap;
+		height: 90vw;
+		width: 90vw;
+		margin: 0;
+		background-color: grey;
+		overflow: hidden;
+	}
+
+	.text {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		color: black;
+		font-family: "Source Sans Pro", sans-serif;
+	}
+
+	.text h1 {
+		font-size: 28px;
+		border-bottom: 1px solid black;
+	}
+
+	ul {
+		list-style: none;
+		height: auto;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	li {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		font-size: 20px;
+		margin: 20px;
+		color: black;
+		text-align: left;
+		width: 66vw;
 	}
 }
