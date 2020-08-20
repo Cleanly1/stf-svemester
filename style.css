@@ -276,15 +276,19 @@ li {
 		background-color: white;
 	}
 
+	.logo {
+		margin-left: 15px;
+	}
+
 	.headerInfo {
 		display: flex;
 		flex-flow: column nowrap;
 		align-items: center;
 		justify-content: center;
 		background-color: white;
-		margin: 30px 0;
-		width: 80vw;
-		padding: 15px 20px;
+		margin: 30px 60px;
+		width: calc(100vw - 100px);
+		padding: 20px;
 	}
 
 	.headerText {
