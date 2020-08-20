@@ -151,7 +151,8 @@ li {
 	background-color: white;
 	padding: 20px;
 	margin: 20px;
-	width: calc(50vw - 80px);
+	width: calc(50vw - 140px);
+	height: 20vh;
 	box-shadow: black 1px 1px 10px;
 }
 
@@ -180,12 +181,14 @@ li {
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
+	height: auto;
 	width: auto;
 }
 .infoText {
 	padding: 20px;
 	margin: 20px;
-	width: calc(50vw - 80px);
+	width: calc(50vw - 140px);
+	height: 20vh;
 	background-color: white;
 	color: var(--darkBlue);
 	font-family: var(--fontBread);
