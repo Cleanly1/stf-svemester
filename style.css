@@ -72,7 +72,7 @@
 .images {
 	width: 23vw;
 	height: auto;
-	margin: 0 0 0 0;
+	margin: 0;
 }
 
 .header {
@@ -87,7 +87,7 @@
 }
 
 .logo {
-	margin-left: 40px;
+	margin-left: 60px;
 	height: 5vh;
 	transition: 0;
 }
@@ -98,7 +98,7 @@
 	justify-content: center;
 	align-items: center;
 	color: var(--darkBlue);
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: var(--fontBread);
 }
 
 .text h1 {
@@ -150,8 +150,8 @@ li {
 	align-items: center;
 	background-color: white;
 	padding: 20px;
-	margin: 30px;
-	width: 40vw;
+	margin: 20px;
+	width: calc(50vw - 80px);
 	box-shadow: black 1px 1px 10px;
 }
 
@@ -178,14 +178,18 @@ li {
 .footer {
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: auto;
 }
 .infoText {
 	padding: 20px;
-	margin: 30px;
-	width: 40vw;
+	margin: 20px;
+	width: calc(50vw - 80px);
+	background-color: white;
+	color: var(--darkBlue);
 	font-family: var(--fontBread);
 	box-shadow: black 1px 1px 10px;
-	background-color: white;
 }
 
 .infoText h1 {
@@ -210,7 +214,29 @@ li {
 
 	.headerImages h1 {
 		margin: 10px;
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: var(--fontBread);
+	}
+
+	.headerText {
+		text-align: center;
+		font-family: var(--fontBread);
+		color: var(--darkBlue);
+	}
+
+	.headerText h1 {
+		font-size: 2.5vh;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	.headerText p {
+		text-align: left;
+		font-size: 1.2vh;
+	}
+
+	.headerText .buttons {
+		width: 25vw;
+		margin: 10px 0;
 	}
 
 	.imageContainer {
@@ -261,6 +287,35 @@ li {
 		color: black;
 		text-align: left;
 		width: 66vw;
+	}
+
+	.buttonContainer {
+		height: 30vh;
+	}
+
+	.buttons {
+		padding: 8px;
+		font-size: 2vh;
+	}
+
+	.infoText {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		padding: 20px;
+		font-family: var(--fontBread);
+		color: var(--darkBlue);
+		box-shadow: black 1px 1px 10px;
+		background-color: white;
+		height: 30vh;
+	}
+
+	.infoText h1 {
+		font-size: 4vh;
+	}
+
+	.infoText p {
+		font-size: 2.5vh;
 	}
 }
 
@@ -353,7 +408,7 @@ li {
 		justify-content: center;
 		align-items: center;
 		color: var(--darkBlue);
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: var(--fontBread);
 	}
 
 	.text h1 {
